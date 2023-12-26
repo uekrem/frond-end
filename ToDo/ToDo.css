@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: #eee;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+}
+
+main > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    width: calc(100vw / 3);
+    height: calc(100vh - 70px);
+}
+
+.search > input[type="text"], .search > button{
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.search > input[type="text"]{
+    padding-left: 10px;
+    width: 250px;
+}
+
+.search > button{
+    width: 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    height: 50px;
+    width: calc(100vw / 3);
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid rgb(157, 157, 157);
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: calc(100vw / 3);
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: auto;
+    border: 1px solid rgb(157, 157, 157);
+}
+
+.list input[type="checkbox"]{
+    margin-top: 20px;
+}
+
+.list ul{
+    list-style-type: none;
+}
+
+input[type="checkbox"]:checked{
+    appearance: none;
+}
+
+input[type="checkbox"]:checked::after{
+    content: '✅';
+}
