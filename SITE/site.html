@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./site.css">
     <link rel="stylesheet" href="./box.css">
-    <link rel="stylesheet" href="./dark_button.css">
     <title>SITE</title>
 </head>
 <body>
-
+    <script src="dark-mode.js"></script>
+    <script src="pop-up.js"></script>
     <header>
         <h1><a href="#">MySite</a></h1>
         <input type="text" placeholder="Sorularini Buraya Yazabilirsin">
@@ -32,8 +32,8 @@
                 <a href="#">HTML</a>
                 <a href="#">CSS</a>
                 <div>
-                    <button>Gece Modu Eklenicek</button>
-                    <button>Indir2</button>
+                    <button class="myButton b-drk-image" onclick="toggleDarkMode()"></button>
+                    <button onclick="openPopup()">Pop-Up</button>
                 </div>
             </div>
         </div>
@@ -211,5 +211,12 @@
         </div>
     </main>
 
+    <div>
+        <div class="popup">
+            <p>Pop-Up!!!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+        <div class="overlay"></div>
+    </div>
 </body>
 </html>
