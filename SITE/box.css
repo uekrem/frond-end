@@ -37,9 +37,10 @@ header > input[type="text"]{
 }
 
 h6 {
-    margin: 0px 60px 15px 80px;
+    margin: 0px 0px 15px 80px;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
+    display: inline-block;
 }
 
 .up{
@@ -47,11 +48,13 @@ h6 {
     background-color: beige;
     height: 35px;
     column-gap: 15px;
+    align-items: center;
 }
 
 a > img {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
 }
 
 .HizliGosterim{
