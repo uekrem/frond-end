@@ -10,12 +10,11 @@ function addTask() {
         alert('Please enter a task!');
         return;
     }
-
+    taskInput.value = '';
     var tasks = getTasksFromLocalStorage();
     tasks.push({ description: taskDescription, completed: false });
     updateTasksInLocalStorage(tasks);
     showTasks();
-    taskInput.value = '';
 }
 
 function showTasks() {

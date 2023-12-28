@@ -47,10 +47,6 @@ main > div {
     width: 250px;
 }
 
-.search > button{
-    width: 40px;
-}
-
 .search {
     display: flex;
     justify-content: center;
@@ -88,4 +84,33 @@ input[type="checkbox"]:checked{
 
 input[type="checkbox"]:checked::after{
     content: '✅';
+}
+
+.search > div > button[onclick], 
+.search > div > button:nth-child(2){
+    background-color: white;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 100ms border;
+}
+
+.search > div > button[onclick]:hover,
+.search > div > button:nth-child(2):hover
+{
+    border: 1px solid black;
+    transition: 100ms border;
+}
+
+.dropdown-menu > label {
+    text-align: center;
+}
+
+.dropdown-menu > label{
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    column-gap: 10px;
 }
